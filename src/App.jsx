@@ -1,9 +1,9 @@
-import BearsPage from "./pages/BearsPage";
+import Test from "./pages/Test";
 
 export default function App() {
   return (
     <div>
-      <BearsPage />
+      <Test />
     </div>
   );
 }

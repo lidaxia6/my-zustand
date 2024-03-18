@@ -1,16 +1,16 @@
-import useBearStore from "../store/useBearStore";
+import useCountStore from "../store/useCountStore";
 
-export default function BearsPage() {
-  const bearsStore = useBearStore();
+export default function CountPage() {
+  const countStore = useCountStore();
   console.log(
-    "%c [ bearsStore ]-5",
+    "%c [ countStore ]",
     "font-size:13px; background:pink; color:#bf2c9f;",
-    bearsStore
+    countStore
   );
-  const {bears, increase, decrease, reset, count, increaseCount} = bearsStore;
+  const { bears, increase, decrease, reset, count, increaseCount } = countStore;
   return (
     <div>
-      <h3>BearsPage</h3>
+      <h3>CountStore</h3>
 
       <button onClick={() => increase()}>increase {bears}</button>
       <button onClick={() => decrease()}>decrease {bears}</button>
