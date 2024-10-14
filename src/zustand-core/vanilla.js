@@ -1,6 +1,6 @@
 // js 状态管理库
 
-export function createStore(createState) {
+export function createStore(fn) {
   console.log("✅调用 createStore");
   let state;
   let listeners = new Set();
@@ -48,8 +48,8 @@ export function createStore(createState) {
   };
 
   // 将 setState,getState,api 传递给createState(),由用户自己使用这些方法来加工处理state
-  console.log("准备调用 createState");
-  state = createState(setState, getState, api);
+  console.log("准备调用 fn");
+  state = fn(setState, getState, api);
   console.log("第一次 state 是什么？", state);
   return api;
 }
