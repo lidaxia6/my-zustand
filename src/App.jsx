@@ -1,6 +1,6 @@
 import Test from './pages/Test';
 import CountPage from './pages/CountPage';
-import UseSyncExternalStorePage from './pages/useSyncExternalStorePage';
+import UseSyncExternalStorePage from './pages/useSyncExternalStorePage/useSyncExternalStorePage';
 
 export default function App() {
   return (
